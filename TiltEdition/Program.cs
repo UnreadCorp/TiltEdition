@@ -35,6 +35,17 @@ namespace TiltEdition
             Menu = new Menu("TiltEdition", "TiltEdition", true);
             Menu.AddItem(new MenuItem("Ping", "Ping").SetValue(false));
             Menu.AddItem(new MenuItem("Frequence", "Ping per Ms").SetValue(new Slider(5000, 50, 5000)));
+
+            Menu.AddItem(
+             new MenuItem("Type", "Ping Type").SetValue(
+                 new StringList(
+                     new[]
+                     {
+                            PingCategory.Danger.ToString(), PingCategory.AssistMe.ToString(),
+                            PingCategory.EnemyMissing.ToString(), PingCategory.Fallback.ToString(),
+                            PingCategory.Normal.ToString(), PingCategory.OnMyWay.ToString()
+                     })));
+            Menu.AddItem(new MenuItem("Exploit", "Ping Exploit").SetValue(false));
             foreach (Obj_AI_Hero Hero in HeroManager.Allies)
             {
                 if (Hero.ChampionName == ObjectManager.Player.ChampionName)
@@ -62,11 +73,14 @@ namespace TiltEdition
         // TREES DID EVERYTHING I JUST COPYPASTED HALF THE STUFF
         private static void Game_OnGameUpdate(EventArgs args)
         {
-
+           
 
             if (!Menu.Item("Ping").IsActive() || Utils.TickCount - LastPing < Menu.Item("Frequence").GetValue<Slider>().Value)
                 return;
 
+            var type =
+                      (PingCategory)Enum.Parse(typeof(PingCategory), Menu.Item("Type").GetValue<StringList>().SelectedValue);
+            type = Menu.Item("Exploit").IsActive() ? (PingCategory)1 : type;
             foreach (var hero in HeroManager.Allies)
             {
                 if (hero.ChampionName == ObjectManager.Player.ChampionName)
@@ -76,7 +90,8 @@ namespace TiltEdition
                 {
                     try
                     {
-                        Game.SendPing((PingCategory)1, hero);
+                       
+                        Game.SendPing(type, hero);
                         LastPing = Utils.TickCount;
                         return;
                     }
