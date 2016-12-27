@@ -1,0 +1,16 @@
+s:\alexdeskgame\documents\visual studio 2015\Projects\TiltEdition\TiltEdition\bin\Debug\TiltEdition.exe.config
+s:\alexdeskgame\documents\visual studio 2015\Projects\TiltEdition\TiltEdition\bin\Debug\TiltEdition.exe
+s:\alexdeskgame\documents\visual studio 2015\Projects\TiltEdition\TiltEdition\bin\Debug\TiltEdition.pdb
+s:\alexdeskgame\documents\visual studio 2015\Projects\TiltEdition\TiltEdition\bin\Debug\LeagueSharp.Common.dll
+s:\alexdeskgame\documents\visual studio 2015\Projects\TiltEdition\TiltEdition\bin\Debug\LeagueSharp.Data.dll
+s:\alexdeskgame\documents\visual studio 2015\Projects\TiltEdition\TiltEdition\bin\Debug\LeagueSharp.dll
+s:\alexdeskgame\documents\visual studio 2015\Projects\TiltEdition\TiltEdition\bin\Debug\SharpDX.dll
+s:\alexdeskgame\documents\visual studio 2015\Projects\TiltEdition\TiltEdition\bin\Debug\SharpDX.Direct3D9.dll
+s:\alexdeskgame\documents\visual studio 2015\Projects\TiltEdition\TiltEdition\bin\Debug\clipper_library.dll
+s:\alexdeskgame\documents\visual studio 2015\Projects\TiltEdition\TiltEdition\bin\Debug\Newtonsoft.Json.dll
+s:\alexdeskgame\documents\visual studio 2015\Projects\TiltEdition\TiltEdition\bin\Debug\LeagueSharp.Common.pdb
+s:\alexdeskgame\documents\visual studio 2015\Projects\TiltEdition\TiltEdition\bin\Debug\LeagueSharp.Data.pdb
+s:\alexdeskgame\documents\visual studio 2015\Projects\TiltEdition\TiltEdition\bin\Debug\clipper_library.pdb
+s:\alexdeskgame\documents\visual studio 2015\Projects\TiltEdition\TiltEdition\obj\Debug\TiltEdition.csprojResolveAssemblyReference.cache
+s:\alexdeskgame\documents\visual studio 2015\Projects\TiltEdition\TiltEdition\obj\Debug\TiltEdition.exe
+s:\alexdeskgame\documents\visual studio 2015\Projects\TiltEdition\TiltEdition\obj\Debug\TiltEdition.pdb
