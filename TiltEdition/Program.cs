@@ -34,7 +34,7 @@ namespace TiltEdition
         {
             Menu = new Menu("TiltEdition", "TiltEdition", true);
             Menu.AddItem(new MenuItem("Ping", "Ping").SetValue(false));
-            Menu.AddItem(new MenuItem("Mute", "Soundless Ping").SetValue(false));
+            Menu.AddItem(new MenuItem("Mute", "NotWorking").SetValue(false));
             Menu.AddItem(new MenuItem("Frequence", "Ping per Ms").SetValue(new Slider(5000, 50, 5000)));
 
             Menu.AddItem(
@@ -95,9 +95,9 @@ namespace TiltEdition
                        
                         if (Menu.Item("Mute").IsActive())
                         {
-                            Game.OnPing += Game_OnPing;// Fuck you Kyon
+                           // Game.OnPing += Game_OnPing;// Fuck you Kyon
                             Game.SendPing(type, hero);
-                            Game.OnPing -= Game_OnPing;// Fuck you Kyon
+                        //    Game.OnPing -= Game_OnPing;// Fuck you Kyon
                         }
                         else
                             Game.SendPing(type, hero);
